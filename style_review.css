@@ -1,0 +1,25 @@
+p{
+    text-align: justify;
+}
+.image{
+    width: 90%;
+    border-radius: 5px;
+}
+.marca_xb, .marca_pc{
+    height: 23px;
+}
+.marca_ps{
+    width: 100px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5;
+}
+.links img{
+    width: 100px;
+}
+.links a:hover{
+    transition-duration: 0.5;
+    font-weight: bold;
+}

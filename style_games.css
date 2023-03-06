@@ -1,0 +1,85 @@
+main{
+    background-color: grey;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    column-gap: 50px;
+}
+.container-1{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+}
+.container-1 > h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.container-1 > h3{
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.container-1 > img{
+    width: 70%;
+}
+.container-2{
+    width: 20vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.info{
+    align-self: center;
+    font-size: 24px;
+}
+.info > a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container-2 > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.links{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.links > div > img{
+    width: 100px;
+}
+.links > div > a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    transition-duration: 0.5s;
+}
+.links > div > a:hover{
+    border-bottom: 8px solid rgba(140, 0, 255, 0.5);
+    transition-duration: 0.5s;
+}
+p{
+    text-align: left;
+}
+@media all and (max-width: 900px){
+    main{
+        background-color: black;
+    }
+}
