@@ -1,0 +1,12 @@
+.cabecalho{
+    background-color: grey;
+}
+.carousel-caption{
+    background-color: rgba(50, 50, 50, 0.65);
+}
+footer .col-6 > a > img{
+    height: 5vh;
+}
+footer .col-6 > img{
+    height: 6vh;
+}
