@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/wallpaper_2.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: contain;
+    backdrop-filter: blur(2px);
+}
+.carousel{
+    border: 1px solid #D3A868;
+}
+.carousel-item > img{
+    height: 480px;
+}
+.carousel-caption{
+    background-color: rgba(50, 50, 50, 0.65);
+}
+.navbar{
+    background: transparent;
+}
+.navbar-nav .nav-link{
+    color: #e4e4e4;
+}
+.nav-link:hover{
+    color: #D3A868;
+    font-weight: 600;
+}
+.bxl-linkedin-square, .bxl-github{
+    font-size: 50px;
+    color: #e4e4e4;
+}
+footer .col-6 > img{
+    height: 6vh;
+}
+.rodape{
+    border-bottom: 1px solid #e4e4e4;
+}
+footer{
+    background-color: rgba(10, 10, 10, 0.7);
+}

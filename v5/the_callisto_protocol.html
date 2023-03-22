@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <!-- CSS do Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+        <!--Link próprio do CSS-->
+        <link rel="stylesheet" href="style_header_footer.css">
+        <link rel="stylesheet" href="style_main.css">
+        <link rel="stylesheet" href="style_review.css">
+    </head>
+
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col p-0">
+                    <!--Navbar-->
+                    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="biojorge_logo.png" alt="biojorge_logo" width="80" height="64">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Jogos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gêneros
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Survival Horror</a></li>
+                                        <li><a class="dropdown-item" href="#">Horror</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Action/Plataform</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Em breve</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contactos</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--Carrosel-->
+            <div class="container p-3">
+                <div class="row d-none d-md-block">
+                    <div class="col p-0">
+                        <div id="carouselExampleCaptions" class="carousel slide rounded-4"" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="elden_ring.jpeg" class="d-block w-100 rounded-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block rounded-4"">
+                                        <h5>Elden Ring</h5>
+                                        <p>Game of the Year winner, a true Souls-like masterpiece</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="GOW_RAGNAROK.jpg" class="d-block w-100 rounded-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block rounded-4">
+                                        <h5>God of War Ragnarok</h5>
+                                        <p>Most awarded game of the year at TGA</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="horizon.jpg" class="d-block w-100 rounded-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block rounded-4"">
+                                        <h5>Horizon Forbidden West</h5>
+                                        <p>Richiest and prettiest open-world game ever created</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="stray.jpg" class="d-block w-100 rounded-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block rounded-4"">
+                                        <h5>Stray</h5>
+                                        <p>The marvelous cat game!!</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center mt-4 col-12">The Callisto Protocol</h1>
+                    <div class="col-8 d-flex gap-2 justify-content-center mx-auto">
+                        <img src="PS5_logo.png" alt="" class="marca_ps">
+                        <img src="PS4-Logo.png" alt="" class="marca_ps">
+                        <img src="1200px-Xbox_Series_X_S_black.svg.png" alt="" class="marca_xb">
+                        <img src="X_Box_One_logo.svg.png" alt="" class="marca_xb">
+                        <img src="PC_logo.png" alt="" class="marca_pc">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center px-5 pb-3">
+                        <p class="justified">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia eligendi accusam
+                            us quidem eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia eligendi accusam
+                            us quidem eos. Quidem tenetur officia molestias voluptas doloribus modi totam, velit sun
+                            t perspiciatis odit porro iure expedita ipsa!
+    
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing e
+                            lit. Illum voluptate odit aperiam quasi, dolorem minus 
+                            libero repellat porro aliquid? <strong>Provident corrupti</strong> quisqua
+                            m nesciunt dolorem unde odio minima harum modi repellendu
+                            s suscipit vero, esse temporibus quis, dignissimos eligend
+                            i sed quia natus possimus cupiditate ut ad, quae earum? In
+                            adipisci mollitia ducimus explicabo quis fugiat. Distincti
+                            o obcaecati aut at <ins>impedit tempore dolorum necessitatibus</ins>,
+                            quod, sunt deserunt, omnis repudiandae facilis. Amet id u
+                            nde harum accusamus voluptates voluptatum dolorem labore 
+                            in culpa beatae totam distinctio atque vitae magnam sapie
+                            nte hic ullam molestiae commodi deserunt mollitia earum, 
+                            dolores explicabo. Reiciendis deserunt nobis ex vero recusandae.
+                        </p>
+    
+                        <img src="callisto_1.jpg" alt="" class="image align-self-center">
+    
+                        <h3 class="text-center my-4">Lorem ipsum dolor sit amet.</h3>
+                        
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing e
+                            lit. Illum voluptate odit aperiam quasi, dolorem minus 
+                            libero repellat porro aliquid? <strong>Provident corrupti</strong> quisqua
+                            m nesciunt dolorem unde odio minima harum modi repellendu
+                            s suscipit vero, esse temporibus quis, dignissimos eligend
+                            i sed quia natus possimus cupiditate ut ad, quae earum? In
+                            adipisci mollitia ducimus explicabo quis fugiat. Distincti
+                            o obcaecati aut at <ins>impedit tempore dolorum necessitatibus</ins>,
+                            quod, sunt deserunt, omnis repudiandae facilis. Amet id u
+                            nde harum accusamus voluptates voluptatum dolorem labore 
+                            in culpa beatae totam distinctio atque vitae magnam sapie
+                            nte hic ullam molestiae commodi deserunt mollitia earum, 
+                            dolores explicabo. Reiciendis deserunt nobis ex vero recusandae.
+                        </p>
+    
+                        <img src="callisto_2.jpg" alt="" class="image w-75 align-self-center">
+    
+                        <p class="my-4">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing e
+                            lit. Illum voluptate odit aperiam quasi, dolorem minus 
+                            libero repellat porro aliquid? <strong>Provident corrupti</strong> quisqua
+                            m nesciunt dolorem unde odio minima harum modi repellendu
+                            s suscipit vero, esse temporibus quis, dignissimos eligend
+                            i sed quia natus possimus cupiditate ut ad, quae earum? In
+                            adipisci mollitia ducimus explicabo quis fugiat. Distincti
+                            o obcaecati aut at <ins>impedit tempore dolorum necessitatibus</ins>,
+                            quod, sunt deserunt, omnis repudiandae facilis. Amet id u
+                            nde harum accusamus voluptates voluptatum dolorem labore 
+                            in culpa beatae totam distinctio atque vitae magnam sapie
+                            nte hic ullam molestiae commodi deserunt mollitia earum, 
+                            dolores explicabo. Reiciendis deserunt nobis ex vero recusandae.
+    
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing e
+                            lit. Illum voluptate odit aperiam quasi, dolorem minus 
+                            libero repellat porro aliquid? <strong>Provident corrupti</strong> quisqua
+                            m nesciunt dolorem unde odio minima harum modi repellendu
+                            s suscipit vero, esse temporibus quis, dignissimos eligend
+                            i sed quia natus possimus cupiditate ut ad, quae earum? In
+                                adipisci mollitia ducimus explicabo quis fugiat. Distincti
+                                o obcaecati aut at <ins>impedit tempore dolorum necessitatibus</ins>,
+                                quod, sunt deserunt, omnis repudiandae facilis. Amet id u
+                                nde harum accusamus voluptates voluptatum dolorem labore 
+                                in culpa beatae totam distinctio atque vitae magnam sapie
+                                nte hic ullam molestiae commodi deserunt mollitia earum, 
+                                dolores explicabo. Reiciendis deserunt nobis ex vero recusandae.
+                        </p>
+                        
+                    </div>    
+        
+                    <div class="col-12 col-lg-4 text-center text-lg-start pb-4">
+                        <strong>Release date:</strong> 
+                        02/12/22
+                        <br>
+                        <a href="https://www.metacritic.com/game/pc/the-callisto-protocol/critic-reviews" class="text-decoration-none text-dark link">
+                            <strong>Metacritic:</strong>
+                        </a> 79
+                        <br>
+                        <strong>Desenvolvedor:</strong>
+                        Striking Distance Studios
+
+                        <img src="callisto_3.webp" alt="" class="image w-100 mt-2">
+                        
+                        <div class="col-12 d-flex flex-column p-3 gap-4">
+                            <div class="links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="playstation.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                            
+                            <div class="links links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="Xbox.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                            
+                            <div class="links links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="Nintendo_switch_logo.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                            
+                            <div class="links links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="steam.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                            
+                            <div class="links links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="villgae.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                            
+                            <div class="links links row d-flex justify-content-center align-items-center">
+                                <div class="col-5 d-flex justify-content-end">
+                                    <img src="DeadSpace.png" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <a href="index.html">Volte para a página inicial através desse link aqui. Será uma grande aventura</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+                    
+        </main>
+
+        <footer class="bg-dark">
+            <div class="container-fluid">
+                <div class="row pt-3 bg-dark">
+                    <p class="text-center text-light">
+                        Copyright&copy; 12/2020. Jorge Filho. Todos os direitos reservados
+                    </p>
+                </div>
+                
+                <div class="row pb-3 d-flex flex-row justify-content-center">
+                    <div class="col-6 d-flex flex-row justify-content-center align-items-center gap-3">
+                        <a href="https://www.linkedin.com/in/jorge-carlos-sousa-filho-5310861a3/">
+                            <img src="linkedin.png" alt="">
+                        </a>
+                        <a href="https://github.com/BioJorge">
+                            <img src="github.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC33_daLj0ALLDhqnoG_d3qA">
+                            <img src="youtube.png" alt="">
+                        </a>
+                        <span class="text-light d-none d-md-block">Minhas redes sociais</span>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center align-items-center gap-3">
+                        <span class="text-light d-none d-md-block">Powered by CodeMaster:</span>
+                        <img src="incode.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+
+</html>
