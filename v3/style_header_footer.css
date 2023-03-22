@@ -1,5 +1,8 @@
+body{
+    background: linear-gradient(60deg,#7A13E8,rgb(20,20,20));
+}
 .cabecalho{
-    background-color: grey;
+    background: transparent;
 }
 .carousel-caption{
     background-color: rgba(50, 50, 50, 0.65);
